@@ -3,7 +3,33 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-  color: mediumslateblue;
+  color: rgb(104, 140, 238);
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  font-weight: 600;
+}
+
+.authPage {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+.authBtn {
+  width: 200px;
+  height: 80px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.authBtn:hover {
+  cursor: pointer;
+}
+
+.authBtn:active {
+  margin-left: 5px;
+  margin-top: 5px;
+  border: 1px solid rgb(83, 120, 183);
 }

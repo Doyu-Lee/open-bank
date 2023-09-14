@@ -9,14 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@tanstack/react-query": "^4.35.0",
+    "@tanstack/react-query-devtools": "^4.35.0",
+    "@tanstack/react-query-next-experimental": "5.0.0-alpha.80",
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
-    "eslint": "8.49.0",
+    "axios": "^1.5.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
+    "qrcode.react": "^3.1.0",
+    "query-string": "^8.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-lottie-player": "^1.5.5",
+    "react-qrcode-reader": "^2.3.9",
+    "styled-components": "^6.0.7",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "eslint": "8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3"
   }
 }

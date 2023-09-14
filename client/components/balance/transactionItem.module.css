@@ -1,0 +1,38 @@
+.table {
+  width: 100%;
+  margin: 10px;
+  background-color: white;
+  width: 400px;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 70vw;
+  opacity: 0.8;
+  margin-bottom: 7rem;
+}
+
+.tableHead {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.tableHeaderCell {
+  font-weight: bold;
+  border-bottom: 1rem solid red;
+  border-color: transparent;
+}
+
+.tableBody {
+  text-align: center;
+}
+
+.tableRow:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tableCell {
+  padding: 4px;
+}
+
+.noContentGuide {
+  color: gray;
+}

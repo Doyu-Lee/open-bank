@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3px;
+}
+
+.userGreeting {
+  margin: 1rem;
+}
+
+.bankItemContainer {
+  background-color: rgb(246, 255, 255);
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bankAlias {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 0 auto 0.7rem auto;
+}
+
+.bankNum {
+  color: rgb(170, 170, 170);
+}
+
+.bankInfoBtnBox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bankInfoBtn {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.bankInfoBtn:first-child {
+  margin-right: 5px;
+}
+
+.bankInfoBtn:hover {
+  cursor: pointer;
+}
+
+.bankInfoBtn:active {
+  border: 2px solid rgb(83, 120, 183);
+}

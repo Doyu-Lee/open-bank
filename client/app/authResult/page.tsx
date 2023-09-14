@@ -6,14 +6,6 @@ import { useCallback, useEffect, useState } from 'react';
 import BankListPage from '../open-bank/list/page';
 import { useRouter } from 'next/navigation';
 
-interface OAuthReqData {
-  code?: string;
-  client_id: string;
-  client_secret: string;
-  redirect_uri: string;
-  grant_type: string;
-}
-
 const AuthResult = () => {
   const router = useRouter();
   const [requestBody, setRequestBody] = useState({
@@ -23,8 +15,8 @@ const AuthResult = () => {
     redirect_uri: process.env.NEXT_PUBLIC_BANK_REDIRECT_URI || '',
     grant_type: 'authorization_code',
   });
-  const [accessToken, setAccessToken] = useState();
-  const [userSeqNo, setUserSeqNo] = useState();
+  // const [accessToken, setAccessToken] = useState();
+  // const [userSeqNo, setUserSeqNo] = useState();
 
   const { mutateAsync: getAccessMutateAsync } = useMutation(() => {
     console.log(requestBody);
@@ -33,8 +25,9 @@ const AuthResult = () => {
 
   const fetchData = useCallback(async () => {
     const getAccessResult = await getAccessMutateAsync();
-    const { accessToken, userSeqNo } = getAccessResult.data;
+    // const { accessToken, userSeqNo } = getAccessResult.data;
 
+    // 실습을 위해 실제 거래 내역 데이터가 저장되어 있는 아이디 사용 (AccessToken 고정)
     let temAccessToken =
       'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMTAwMDM0NzM2Iiwic2NvcGUiOlsiaW5xdWlyeSIsImxvZ2luIiwidHJhbnNmZXIiXSwiaXNzIjoiaHR0cHM6Ly93d3cub3BlbmJhbmtpbmcub3Iua3IiLCJleHAiOjE3MDI0MzE5NDYsImp0aSI6ImRlNGRlNmEyLTIxNmItNGIyNi04YjA4LThlMDVkYmQwMzU0MyJ9.BirXtT1V5AmgZC3SuTAOj-E0TuTcFsrdVco0gR6FlsA';
     let temUserSeqNo = '1100034736';

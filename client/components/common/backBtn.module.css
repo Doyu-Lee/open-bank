@@ -1,0 +1,13 @@
+.backBtnBox {
+  display: flex;
+  padding-left: 1rem;
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  z-index: 5;
+}
+
+.backBtn {
+  border-color: transparent;
+  background-color: transparent;
+}

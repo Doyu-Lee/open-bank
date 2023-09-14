@@ -58,7 +58,7 @@ export const apiOAuth = {
     return response;
   },
   getTransactionList: async (params: GetTransactionListParams) => {
-    const accessToken = localStorage.getItem('accessToken');
+    // const accessToken = localStorage.getItem('accessToken');
     const response = await axios.get(`/v2.0/account/transaction_list/fin_num`, {
       headers: {
         // 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
